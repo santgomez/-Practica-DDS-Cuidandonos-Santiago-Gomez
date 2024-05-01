@@ -1,0 +1,8 @@
+public class detenerseMinutos implements Parada{
+	public static float minutosDeParada; //minutos que estuvo en la parada
+	
+	public float calcularDemora() {
+		return Viaje.calcularSegundosDeDemora(calculadoraDeDemora) - (minutosDeParada*60); // se multiplica por 60 para convertirlo en segundos
+	}
+	
+}
